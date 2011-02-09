@@ -9,11 +9,208 @@ table
   border-spacing: 0
 
 th, td
- text-align: left
- vertical-align: top
+  text-align: left
+  vertical-align: top
 
 h1, h2, h3, h4, h5, h6, th, td, caption
   font-weight: normal
 
 img
   border: 0
+  
+  
+h1
+  margin-top: 10px
+  margin-bottom: 5px
+  font-family: 'Cabin', arial, serif
+  font-size: 3.5em
+  text-align: center
+  a:link, a:visited
+    color: #000
+    text-decoration: none
+  a:hover, a:active
+    background-color: #eee
+    color: #444
+    
+
+h3
+  font-family: 'Cabin', arial, serif
+  font-size: 32px
+  text-align: center
+a
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  padding: 5px 5px
+a:link, a:visited
+  color: #5386AD
+  text-decoration: none
+a:hover, a:active
+  text-shadow: none
+  background-color: #5386AD
+  color: white
+
+code, pre
+  font-family: monospace
+  
+body
+  background: #ccc url("/images/light-noise.png")
+  color: #333
+  font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, Sans-Serif
+  font-size: 17px
+  
+.project-grid
+  width: 700px
+  margin: auto
+  text-align: center
+.info-section
+  width: 500px
+  height: 20px
+  padding: 10px 30px
+  margin: 5px auto
+  background: #AAA
+  -webkit-border-radius: 20px
+  -moz-border-radius: 20px
+  border-radius: 20px
+.entry
+  display: inline-block
+  background: #FeFeFe
+  color: #001A2B
+  overflow: hidden
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  padding: 0
+  width: 200px
+  height: 150px
+  margin: 10px 10px
+  -webkit-box-shadow: 2px 2px 2px #AAA
+  -moz-box-shadow: 2px 2px 2px #AAA
+  box-shadow: 2px 2px 2px #AAA
+  position: relative
+  -webkit-transition: .1s ease-in-out
+  -moz-transition: .1s ease-in-out
+  font-family: 'Cabin', arial, serif
+  
+  
+  &:hover
+    top: -2px
+    left: -1px
+    -webkit-box-shadow: 3px 3px 4px #666
+    -moz-box-shadow: 3px 3px 4px #666
+    box-shadow: 3px 3px 4px #666
+  .label
+    -webkit-border-radius: 20px
+    -moz-border-radius: 20px
+    border-radius: 20px
+    position: absolute
+    bottom: 5px
+    left: 40px
+    width: 100px
+    height: 20px
+    padding: 5px 10px
+    color: #fff
+    background: #222
+    opacity: 0.85
+    
+.shroud
+  width: 100%
+  height: 100%
+  position: absolute
+  left: 0
+  top: 0
+  background: black
+  opacity: 0.8
+  z-index: 1000
+.overlay
+  position: absolute
+  left: 50%
+  top: 100px
+  margin-left: -350px
+  width: 710px
+  z-index: 5000
+  .left
+    float: left
+    width: 400px
+    margin: 0
+    height: 300px
+    background: #ccc
+    -webkit-border-radius: 10px 0 0 10px
+    -moz-border-radius: 10px 0 0 10px
+    border-radius: 10px 0 0 10px
+  .right
+    float: left
+    width: 220px
+    height: 300px
+    padding: 0 40px
+    background: #ccc
+    -webkit-border-radius: 0 10px 10px 0
+    -moz-border-radius: 0 10px 10px 0
+    border-radius: 0 10px 10px 0
+    position: relative
+    h3
+      margin: 20px auto 10px auto
+    p
+      text-align: left
+    .links
+      position: absolute
+      left: 25px
+      bottom: 20px
+      padding: 0
+      margin: 0
+      a
+        display: inline-block
+        width: 90px
+        height: 20px
+        background: #999
+        color: #222
+        padding: 10px 20px
+        cursor: pointer
+        background-repeat: no-repeat
+        border: 1px solid #777
+        
+        &:hover
+          background-color: #AAA
+      .no-github
+        cursor: auto
+        width: 80px
+        -webkit-border-radius: 10px 0 0 10px
+        -moz-border-radius: 10px 0 0 10px
+        border-radius: 10px 0 0 10px
+        border-right: none
+        background: #ccc
+        &:hover
+          background: #ccc
+      .github
+        width: 80px
+        background-position: 85px 7px
+        text-align: left
+        -webkit-border-radius: 10px 0 0 10px
+        -moz-border-radius: 10px 0 0 10px
+        border-radius: 10px 0 0 10px
+        border-right: none
+        background-image: url('/images/github-small.png')
+        
+      .no-website
+        cursor: auto
+        -webkit-border-radius: 0 10px 10px 0
+        -moz-border-radius: 0 10px 10px 0
+        border-radius: 0 10px 10px 0
+        background: #ccc
+        margin-left: -5px
+        
+        &:hover
+          background: #ccc
+
+      .website
+        background-position: 10px 3px
+        background-image: url('/images/website.png')
+        text-align: right
+        margin-left: -5px
+        -webkit-border-radius: 0 10px 10px 0
+        -moz-border-radius: 0 10px 10px 0
+        border-radius: 0 10px 10px 0
+
+
+#footer
+  text-align: center

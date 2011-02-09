@@ -1,1 +1,22 @@
-%h1 Hello, World!
+%h1 Sam Warmuth
+.info-section
+  <strong>status</strong>&nbsp; Graduating in May &nbsp;&nbsp;&nbsp;<strong>contact </strong>&nbsp; sam@samwarmuth.com
+.project-grid
+  -@entries.each do |e|
+    .entry{:id => e.id, :style => "background-image: #{e.thumb}"}
+      .label= e.name
+    .overlay{:id => (e.id + "over")}
+      .left{:style => "background-image: #{e.image}"}
+      .right
+        %h3= e.name
+        %p= e.description
+        .links
+          -if e.github
+            %a.github{:href => e.github} GitHub
+          -else
+            %a.no-github No GitHub
+          -if e.website
+            %a.website{:href => e.website} Website
+          -else
+            %a.no-website No Site
+.shroud
