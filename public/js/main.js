@@ -1,8 +1,8 @@
 $(document).ready(function(){
   $(".overlay, .shroud").hide();
   $(".entry").click(function(){
-    $(".shroud").fadeIn(1000);
-    $('#'+$(this).attr('id')+"over").fadeIn(200);
+    $(".shroud").fadeIn(200);
+    $('#'+$(this).attr('id')+"over").fadeIn(100);
     return false;
   });
   
